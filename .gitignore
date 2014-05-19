@@ -1,7 +1,7 @@
 src/*.exe
-src/zetacoin
+src/dvorakoin
 src/dvorakoind
-src/test_zetacoin
+src/test_dvorakoin
 .*.swp
 *.*~*
 *.bak
@@ -9,17 +9,16 @@ src/test_zetacoin
 *.orig
 *.o
 *.patch
-.zetacoin
+
 
 # Compilation and Qt preprocessor part
 *.qm
-Makefile
 dvorakoin-qt
-Zetacoin-Qt.app
+DvoraKoin-Qt.app
 
 # Unit-tests
 Makefile.test
-zetacoin-qt_test
+dvorakoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
