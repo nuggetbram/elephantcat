@@ -38,7 +38,7 @@ public:
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
   
-        const char* pszTimestamp = "Ukraine nearing point of no return: UN";
+        const char* pszTimestamp = "Ukraine nearing point of no return - UN";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -51,7 +51,7 @@ public:
         genesis.nVersion = BLOCK_VERSION_DEFAULT;
         genesis.nTime    = 1400582300;
         genesis.nBits    = 0x1e0fffff;
-        genesis.nNonce   = 0;
+        genesis.nNonce   = 263480;
         
         //// debug print
         hashGenesisBlock = genesis.GetHash();
@@ -65,8 +65,8 @@ public:
         printf("%x\n", bnProofOfWorkLimit[ALGO_SHA256D].GetCompact());
         genesis.print();
 
-        assert(hashGenesisBlock == uint256("0x00000dd401f18cd4b198c95a0c1d4b80dfb684f4c5d3094c166119a8605ba8c8"));
-        assert(genesis.hashMerkleRoot == uint256("0x4c4b352693b1782d93a5088eaa46714371953244bdeff866eae6c6f6cb689df1"));
+        assert(hashGenesisBlock == uint256("0x000003070f466e13150a395e05856c99c5f70f9934e1d1cc0aa6dd8024de7743"));
+        assert(genesis.hashMerkleRoot == uint256("0xda9dc50395fb1134b8bf04ffff1963ee78b1d7c4b423466b85a5ed352ded5cf5"));
 
         //vSeeds.push_back(CDNSSeedData("dvorakoin.com", "dvorakoin.com"));
         //vSeeds.push_back(CDNSSeedData("182.18.175.110", "182.18.175.110"));
@@ -122,7 +122,7 @@ public:
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1400582300;
-        genesis.nNonce = 1016765;
+        genesis.nNonce = 263480;
         
         //// debug print
         hashGenesisBlock = genesis.GetHash();
@@ -135,7 +135,7 @@ public:
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
         genesis.print();
         
-        assert(hashGenesisBlock == uint256("0x00000dd401f18cd4b198c95a0c1d4b80dfb684f4c5d3094c166119a8605ba8c8"));
+        assert(hashGenesisBlock == uint256("0x000003070f466e13150a395e05856c99c5f70f9934e1d1cc0aa6dd8024de7743"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
