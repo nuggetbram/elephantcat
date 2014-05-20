@@ -49,9 +49,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = BLOCK_VERSION_DEFAULT;
-        genesis.nTime    = 1400485490;
+        genesis.nTime    = 1400582300;
         genesis.nBits    = 0x1e0fffff;
-        genesis.nNonce   = 1016765;
+        genesis.nNonce   = 0;
         
         //// debug print
         hashGenesisBlock = genesis.GetHash();
@@ -121,7 +121,7 @@ public:
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1400485490;
+        genesis.nTime = 1400582300;
         genesis.nNonce = 1016765;
         
         //// debug print
